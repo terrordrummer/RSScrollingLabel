@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'RSScrollingLabel_Example' do
+  pod 'RSScrollingLabel', :path => '../'
+
+  target 'RSScrollingLabel_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
