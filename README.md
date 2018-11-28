@@ -6,7 +6,7 @@
 [![Platform](https://img.shields.io/cocoapods/p/RSScrollingLabel.svg?style=flat)](https://cocoapods.org/pods/RSScrollingLabel)
 
 ## Description
-![](RSScrollingLabel/RSScrollingLabelDemo.gif)
+![](https://github.com/terrordrummer/RSScrollingLabel/RSScrollingLabelDemo.gif)
 
 This is a simple UIView that emulates an UILabel and allows to animate text. To perform a text animation just call the following function:
 
