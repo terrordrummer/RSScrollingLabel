@@ -41,10 +41,10 @@
 		607FACE51AFB9204008FA782 /* RSScrollingLabel_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RSScrollingLabel_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		711F463387AB28554FA9D2DA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		711F463387AB28554FA9D2DA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		7785FF49EB7F763B045A898F /* Pods-RSScrollingLabel_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSScrollingLabel_Tests.release.xcconfig"; path = "Target Support Files/Pods-RSScrollingLabel_Tests/Pods-RSScrollingLabel_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		E88264D9EBBE1E2EF2E89E85 /* RSScrollingLabel.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = RSScrollingLabel.podspec; path = ../RSScrollingLabel.podspec; sourceTree = "<group>"; };
-		F73EDC2E7DAD2D8B0C2EEABD /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		E88264D9EBBE1E2EF2E89E85 /* RSScrollingLabel.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = RSScrollingLabel.podspec; path = ../RSScrollingLabel.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		F73EDC2E7DAD2D8B0C2EEABD /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		F7DFDD277DC8BECDB0221F67 /* Pods-RSScrollingLabel_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSScrollingLabel_Tests.debug.xcconfig"; path = "Target Support Files/Pods-RSScrollingLabel_Tests/Pods-RSScrollingLabel_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		FFD93AF91B85A07E3A6C4579 /* Pods_RSScrollingLabel_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RSScrollingLabel_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -156,7 +156,6 @@
 				F7DFDD277DC8BECDB0221F67 /* Pods-RSScrollingLabel_Tests.debug.xcconfig */,
 				7785FF49EB7F763B045A898F /* Pods-RSScrollingLabel_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};

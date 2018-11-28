@@ -23,7 +23,7 @@ enum Direction {
 ```
 
 
-This class wraps the following common UILabel properties:
+RSScrollLabel also wraps the following common UILabel properties:
 
 * `textAlignment`
 * `textColor`
