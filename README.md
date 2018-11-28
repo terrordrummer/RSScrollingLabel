@@ -5,11 +5,25 @@
 [![License](https://img.shields.io/cocoapods/l/RSScrollingLabel.svg?style=flat)](https://cocoapods.org/pods/RSScrollingLabel)
 [![Platform](https://img.shields.io/cocoapods/p/RSScrollingLabel.svg?style=flat)](https://cocoapods.org/pods/RSScrollingLabel)
 
+## Description
+![](RSScrollingLabel/RSScrollingLabelDemo.gif)
+
+This is a simple UIView that emulates an UILabel and allows to animate text. To perform a text animation just call the following function:
+
+```swift
+func animate(to text: String, direction: Direction)
+```
+
+This class wraps the following common UILabel properties:
+
+* `textAlignment`
+* `textColor`
+* `font`
+* `text` (not animated)
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Requirements
 
 ## Installation
 

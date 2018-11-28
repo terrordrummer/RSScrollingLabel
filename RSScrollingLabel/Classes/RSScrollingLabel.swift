@@ -17,6 +17,8 @@ class RSScrollingLabel: UIView {
     public enum Direction {
         case up
         case down
+        case left
+        case right
     }
 
     // MARK: - Private vars
@@ -105,7 +107,7 @@ class RSScrollingLabel: UIView {
     /// Perform a scroll animation to the given value
     ///
     /// - Parameter value: final value
-    public func animateTo(text: String?, direction: Direction) -> Void {
+    public func animate(to text: String?, direction: Direction) -> Void {
         DispatchQueue.main.async {
             self.toLabel.text = text
             self.prepareAnimation(direction)
@@ -128,6 +130,10 @@ class RSScrollingLabel: UIView {
             toLabel.frame = bounds.applying(CGAffineTransform(translationX: 0, y: bounds.height))
         case .down:
             toLabel.frame = bounds.applying(CGAffineTransform(translationX: 0, y: -bounds.height))
+        case .left:
+            toLabel.frame = bounds.applying(CGAffineTransform(translationX: bounds.width, y: 0))
+        case.right:
+            toLabel.frame = bounds.applying(CGAffineTransform(translationX: -bounds.width, y: 0))
         }
         fromLabel.frame = bounds
         toLabel.alpha = 1
@@ -139,6 +145,10 @@ class RSScrollingLabel: UIView {
             fromLabel.frame = bounds.applying(CGAffineTransform(translationX: 0, y: -bounds.height))
         case .down:
             fromLabel.frame = bounds.applying(CGAffineTransform(translationX: 0, y: bounds.height))
+        case .left:
+            fromLabel.frame = bounds.applying(CGAffineTransform(translationX: -bounds.width, y: 0))
+        case .right:
+            fromLabel.frame = bounds.applying(CGAffineTransform(translationX: bounds.width, y: 0))
         }
         toLabel.frame = bounds
     }

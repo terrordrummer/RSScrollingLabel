@@ -67,12 +67,36 @@
                                     <action selector="scrollDown" destination="vXZ-lx-hvc" eventType="touchUpInside" id="w9t-5B-ibI"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wG4-KN-WKd">
+                                <rect key="frame" x="267.5" y="318.5" width="87.5" height="30"/>
+                                <state key="normal" title="Scroll Right">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="scrollRight" destination="vXZ-lx-hvc" eventType="touchUpInside" id="8i5-hW-B1p"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="axT-by-0dh">
+                                <rect key="frame" x="36" y="318.5" width="71.5" height="30"/>
+                                <state key="normal" title="Scroll Left">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="scrollLeft" destination="vXZ-lx-hvc" eventType="touchUpInside" id="t8X-jp-XDD"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="wG4-KN-WKd" secondAttribute="trailing" constant="20" id="2cP-nF-C2b"/>
+                            <constraint firstItem="7in-QW-je2" firstAttribute="leading" secondItem="axT-by-0dh" secondAttribute="trailing" constant="20" id="4co-dL-TG5"/>
                             <constraint firstItem="7in-QW-je2" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="8Yy-JN-Ybx"/>
+                            <constraint firstItem="wG4-KN-WKd" firstAttribute="leading" secondItem="7in-QW-je2" secondAttribute="trailing" constant="20" id="CeT-rF-vfN"/>
                             <constraint firstItem="z1b-ZZ-re6" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="EU3-ba-iII"/>
                             <constraint firstItem="z1b-ZZ-re6" firstAttribute="top" secondItem="7in-QW-je2" secondAttribute="bottom" constant="60" id="OGt-PK-8C7"/>
+                            <constraint firstItem="wG4-KN-WKd" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="OXM-Qc-s4N"/>
+                            <constraint firstItem="axT-by-0dh" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="20" id="PQ6-c5-ZFd"/>
+                            <constraint firstItem="axT-by-0dh" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="e1u-H5-bDT"/>
                             <constraint firstItem="GGg-k7-JtT" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="tWF-nf-KXL"/>
                             <constraint firstItem="7in-QW-je2" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="waN-uK-xI7"/>
                             <constraint firstItem="7in-QW-je2" firstAttribute="top" secondItem="GGg-k7-JtT" secondAttribute="bottom" constant="60" id="wnx-Cp-1OR"/>

@@ -31,11 +31,19 @@ class ViewController: UIViewController {
     // MARK: - Actions
 
     @IBAction func scrollUp() {
-        scrollingLabel.animateTo(text: "Scroll Up", direction: .up)
+        scrollingLabel.animate(to: "Scroll Up", direction: .up)
     }
 
     @IBAction func scrollDown() {
-        scrollingLabel.animateTo(text: "Scroll Down", direction: .down)
+        scrollingLabel.animate(to: "Scroll Down", direction: .down)
+    }
+
+    @IBAction func scrollLeft() {
+        scrollingLabel.animate(to: "Scroll Left", direction: .left)
+    }
+
+    @IBAction func scrollRight() {
+        scrollingLabel.animate(to: "Scroll Right", direction: .right)
     }
 }
 
