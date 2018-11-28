@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,8 +20,67 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7in-QW-je2" customClass="RSScrollingLabel" customModule="RSScrollingLabel">
+                                <rect key="frame" x="127.5" y="313.5" width="120" height="40"/>
+                                <color key="backgroundColor" red="0.96078431369999995" green="0.65098039220000004" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="nMV-pj-flf"/>
+                                    <constraint firstAttribute="height" constant="40" id="sjk-Lp-cfI"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="text" value="RSScrollingLabel"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                        <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GGg-k7-JtT">
+                                <rect key="frame" x="156" y="223.5" width="63" height="30"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Scroll Up">
+                                            <attributes>
+                                                <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <font key="NSFont" metaFont="system" size="15"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="scrollUp" destination="vXZ-lx-hvc" eventType="touchUpInside" id="UF1-Ct-kPx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z1b-ZZ-re6">
+                                <rect key="frame" x="146.5" y="413.5" width="82" height="30"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Scroll Down">
+                                            <attributes>
+                                                <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <font key="NSFont" metaFont="system" size="15"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="scrollDown" destination="vXZ-lx-hvc" eventType="touchUpInside" id="w9t-5B-ibI"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="7in-QW-je2" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="8Yy-JN-Ybx"/>
+                            <constraint firstItem="z1b-ZZ-re6" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="EU3-ba-iII"/>
+                            <constraint firstItem="z1b-ZZ-re6" firstAttribute="top" secondItem="7in-QW-je2" secondAttribute="bottom" constant="60" id="OGt-PK-8C7"/>
+                            <constraint firstItem="GGg-k7-JtT" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="tWF-nf-KXL"/>
+                            <constraint firstItem="7in-QW-je2" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="waN-uK-xI7"/>
+                            <constraint firstItem="7in-QW-je2" firstAttribute="top" secondItem="GGg-k7-JtT" secondAttribute="bottom" constant="60" id="wnx-Cp-1OR"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="scrollingLabel" destination="7in-QW-je2" id="OI3-6e-MUa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

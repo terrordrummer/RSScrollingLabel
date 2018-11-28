@@ -1,0 +1,16 @@
+PODS:
+  - RSScrollingLabel (0.1.0)
+
+DEPENDENCIES:
+  - RSScrollingLabel (from `../`)
+
+EXTERNAL SOURCES:
+  RSScrollingLabel:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  RSScrollingLabel: 755b75ae9598d79eeeb36bff1231f89c1072bb21
+
+PODFILE CHECKSUM: 3cb55a3b0d59d65aadd0f8f052feb488207b281e
+
+COCOAPODS: 1.6.0.beta.2

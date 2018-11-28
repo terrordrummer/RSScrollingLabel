@@ -1,0 +1,6 @@
+framework module RSScrollingLabel {
+  umbrella header "RSScrollingLabel-umbrella.h"
+
+  export *
+  module * { export * }
+}

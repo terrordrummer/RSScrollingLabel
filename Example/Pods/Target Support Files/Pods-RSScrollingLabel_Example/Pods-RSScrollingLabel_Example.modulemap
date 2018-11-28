@@ -1,0 +1,6 @@
+framework module Pods_RSScrollingLabel_Example {
+  umbrella header "Pods-RSScrollingLabel_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
