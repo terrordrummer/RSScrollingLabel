@@ -15,10 +15,7 @@ class RSScrollingLabel: UIView {
 
     // MARK: -
     public enum Direction {
-        case up
-        case down
-        case left
-        case right
+        case up, down, left, right
     }
 
     // MARK: - Private vars

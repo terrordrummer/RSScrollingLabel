@@ -14,6 +14,15 @@ This is a simple UIView that emulates an UILabel and allows to animate text. To 
 func animate(to text: String, direction: Direction)
 ```
 
+The four main direction are available:
+
+```swift
+enum Direction {
+        case up, down, left, right
+    }
+```
+
+
 This class wraps the following common UILabel properties:
 
 * `textAlignment`
